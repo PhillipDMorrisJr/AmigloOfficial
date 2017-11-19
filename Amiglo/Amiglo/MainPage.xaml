@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Amiglo"
+             x:Class="Amiglo.MainPage">
+
+    <StackLayout WidthRequest="300" HeightRequest="500" >
+
+        <Image Source="" WidthRequest="200" HeightRequest="200"></Image>
+
+        <Label Text="Live Chat with Amiglo" FontSize="20" ></Label>
+
+        <WebView x:Name="webview" Source="https://webchat.botframework.com/embed/DevEnvExeBot?s=8XGcUROXkAA.cwA.pZo.8pJ-6oQ3sJRpxq0tqIo9uLPji4oxBQuz2pW5qWobw2c" 
+ 
+                WidthRequest="300" HeightRequest= "300"></WebView>
+
+    </StackLayout>
+
+</ContentPage>
