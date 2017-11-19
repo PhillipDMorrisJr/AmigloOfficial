@@ -4,16 +4,12 @@
              xmlns:local="clr-namespace:Amiglo"
              x:Class="Amiglo.MainPage">
 
-    <StackLayout WidthRequest="300" HeightRequest="500" >
-
-        <Image Source="" WidthRequest="200" HeightRequest="200"></Image>
-
+    <StackLayout WidthRequest="300" HeightRequest="250" >
         <Label Text="Live Chat with Amiglo" FontSize="20" ></Label>
 
-        <WebView x:Name="webview" Source="https://webchat.botframework.com/embed/DevEnvExeBot?s=8XGcUROXkAA.cwA.pZo.8pJ-6oQ3sJRpxq0tqIo9uLPji4oxBQuz2pW5qWobw2c" 
- 
-                WidthRequest="300" HeightRequest= "300"></WebView>
-
+        <WebView x:Name="webview" Source="https://webchat.botframework.com/embed/Amiglo2?s=nG-LVmkoiho.cwA.QEI.gAPgyND7t6uswc7WT45sfj8ZROoWG_zdeuGuDAz9nhE" 
+                WidthRequest="300" HeightRequest= "200"></WebView>
+        
     </StackLayout>
 
 </ContentPage>
