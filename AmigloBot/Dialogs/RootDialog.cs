@@ -14,6 +14,7 @@ namespace AmigloBot.Dialogs
     {
         public Task StartAsync(IDialogContext context)
         {
+            context.Wait(WelcomingMessageAsync);
             context.Wait(MessageReceivedAsync);
 
             return Task.CompletedTask;
@@ -66,7 +67,7 @@ namespace AmigloBot.Dialogs
 
 
         private async Task WelcomingMessageAsync(IDialogContext context, IAwaitable<object> result){
-            var activity = await result as Activity;
+            var activity = result as Activity;
 
             await context.PostAsync("Hello! Welcome to Amigalo! How can I help you today?");
         }
